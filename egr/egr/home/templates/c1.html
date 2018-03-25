@@ -1,0 +1,21 @@
+{% extends "base_generic.html" %}
+{% block content %}
+
+<div class="text-center">
+  <code>Comapny Name:{{company1.name}}  Company Id:{{company1.id}}</code>
+</div>
+<h2 class="text-warning text-center">User Details</h2>
+{% for u in user1%}
+<div class="text-center">
+  <code>User First Name :{{u.u_fname}} User Last Name :{{u.u_lname}} Company Id:{{u.company_id}}</code>
+</div>
+{% endfor %}
+<div style="position: absolute;
+    border: 2px solid;
+    border-radius: 25px;
+    padding: 5px;
+    margin: 5px;
+    border-color: #999999 >
+
+</div>
+{% endblock %}

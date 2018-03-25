@@ -1,0 +1,57 @@
+
+{% extends "base_generic.html" %}
+
+<html>
+<head></head>
+<body>
+
+
+<!-- </div> -->
+
+{% block content %}
+<!-- <div  class=" img-thumbnail "> -->
+          <h3 id="h32" class="text-left text-primary text-center">Comapnies</h3><br>
+          <div class="row ">
+
+              <div class="col-4 col-md-3 text-center">
+                  <a href="{% url 'c1' %}" > <img src="http://www.startuptalky.com/wp-content/uploads/2017/02/Company-Culture-Matters-Heres-Why3-950x509.png" class="img-fluid img-thumbnail text-center" alt="My first Project"></a>
+              </div>
+              <div class="col-4 col-md-3 text-center">
+                  <a href="{% url 'c2' %}" > <img src="http://www.startuptalky.com/wp-content/uploads/2017/02/Company-Culture-Matters-Heres-Why3-950x509.png" class="img-fluid img-thumbnail text-center" alt="My Second Project"></a>
+              </div>
+              <div class="col-4 col-md-3 text-center">
+                  <a href="{% url 'c3' %}" > <img src="http://www.startuptalky.com/wp-content/uploads/2017/02/Company-Culture-Matters-Heres-Why3-950x509.png" class="img-fluid img-thumbnail text-center" alt="My Third Project "></a>
+              </div>
+              <div  class="col-4 col-md-3 text-center">
+                  <a href="{% url 'c4' %}" > <img src="http://www.startuptalky.com/wp-content/uploads/2017/02/Company-Culture-Matters-Heres-Why3-950x509.png" class="img-fluid img-thumbnail text-center" alt="My Fourth Project"></a>
+              </div>
+              <div id="div10" class="col-4 col-md-3 text-center">
+                  <a href="{% url 'c5' %}"  > <img src="http://www.startuptalky.com/wp-content/uploads/2017/02/Company-Culture-Matters-Heres-Why3-950x509.png" class="img-fluid img-thumbnail text-center" alt="My Fifth Project"></a>
+              </div>
+              <div  id="div10" class="col-4 col-md-3 text-center">
+                  <a href="{% url 'c6' %}"  > <img src="http://www.startuptalky.com/wp-content/uploads/2017/02/Company-Culture-Matters-Heres-Why3-950x509.png" class="img-fluid img-thumbnail text-center" alt="My Sixth Project"></a>
+              </div>
+              <div  id="div10" class="col-4 col-md-3 text-center">
+                  <a href="{% url 'c6' %}"  > <img src="http://www.startuptalky.com/wp-content/uploads/2017/02/Company-Culture-Matters-Heres-Why3-950x509.png" class="img-fluid img-thumbnail text-center" alt="My Sixth Project"></a>
+              </div>
+              <div  id="div10" class="col-4 col-md-3 text-center">
+                  <a href="{% url 'c6' %}"  > <img src="http://www.startuptalky.com/wp-content/uploads/2017/02/Company-Culture-Matters-Heres-Why3-950x509.png" class="img-fluid img-thumbnail text-center" alt="My Sixth Project"></a>
+              </div>
+
+      </div>
+    <!-- </div> --><hr />
+<div class="text-center">
+<h4 class="text-primary">Choose the company</h4>
+<select  name="Companies">
+<option value="redirect(reverse('c1'))">Company1 </option>
+<option value="Company2" href="{% url 'index' %}">Company2</option>
+<option value="Company3" href="{% url 'index' %}">Company3</option>
+<option value="Company4" href="{% url 'index' %}">Company4</option>
+<option value="Company5" href="{% url 'index' %}">Company5</option>
+<option value="Company6" href="{% url 'index' %}">Company6</option>
+</select>
+</div>
+{% endblock %}
+</div>
+</body>
+</html>

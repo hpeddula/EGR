@@ -1,0 +1,8 @@
+{% extends "base_generic.html" %}
+{% block content %}
+{% for com in company3%}
+<div class="text-center">
+  <code>Comapny Name:{{com.name}}  Company Id:{{com.id}}</code>
+</div>
+{% endfor %}
+{% endblock %}
