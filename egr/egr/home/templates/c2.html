@@ -1,8 +1,13 @@
 {% extends "base_generic.html" %}
 {% block content %}
-{% for com in company2%}
+
 <div class="text-center">
-  <code>Comapny Name:{{com.name}}  Company Id:{{com.id}}</code>
+  <code>Comapny Name:{{company2.name}}  Company Id:{{company2.id}} Time:{{company2.pub_date}}</code>
+</div>
+
+{% for u in user2%}
+<div class="text-center">
+  <code>User First Name :{{u.u_fname}} User Last Name :{{u.u_lname}} Company Id:{{u.company_id}}</code>
 </div>
 {% endfor %}
 {% endblock %}
